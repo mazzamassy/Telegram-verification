@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    padding: 20px;
+    width: 100%;
+}
+
+.emoji {
+    font-size: 86px;
+    margin-bottom: 20px;
+}
+
+.emoji img {
+    width: 200px;
+    height: 200px;
+}
+
+.phone-number {
+    font-size: 33px;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.edit-icon {
+    color: #3390EC;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.message {
+    color: #707579;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 32px;
+}
+
+.form {
+    width: 100%;
+    max-width: 360px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.input-label {
+    color: #707579;
+    font-size: 14px;
+}
+
+.code-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #DADCE0;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+    background: white;
+}
+
+.code-input:focus {
+    border-color: #3390EC;
+}
+
+.verify-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3390EC;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.verify-button:hover {
+    background-color: #2884e0;
+} 

