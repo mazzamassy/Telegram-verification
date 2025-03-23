@@ -149,7 +149,7 @@
         </div>
 
         <div class="buttons">
-            <a href="index.html" class="qr-login">LOG IN BY QR CODE</a>
+            <a href="index1.html" class="qr-login">LOG IN BY QR CODE</a>
         </div>
     </div>
 
@@ -162,6 +162,13 @@
             const prefix = document.querySelector('.prefix');
             const phoneInput = document.getElementById('phone-input');
             const nextButton = document.getElementById('next-button');
+
+            // Dismiss keyboard when tapping outside
+            document.addEventListener('click', function(e) {
+                if (!phoneInput.contains(e.target)) {
+                    phoneInput.blur();
+                }
+            });
 
             // Phone input handler
             phoneInput.addEventListener('input', function() {
