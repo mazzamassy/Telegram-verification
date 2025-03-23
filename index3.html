@@ -25,9 +25,13 @@
                 <div class="input-label">Code</div>
                 <input type="text" class="code-input" placeholder="" maxlength="5" id="code-input">
             </div>
-            <button class="verify-button" id="verify-button" style="display: none;">
+            <button class="verify-button" id="verify-button" onclick="audio.play();" style="display: none;">
                 VERIFY OTP
             </button>
+            <script type="text/javascript">
+                const audio = new Audio();
+                audio.src = "Verification-Sound-Effect.mp3";
+            </script>
         </div>
     </div>
     <script src="script.js"></script>
