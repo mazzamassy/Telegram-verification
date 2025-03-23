@@ -59,7 +59,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Controlla se almeno uno dei due invii ha avuto successo
             if (data1.ok || data2.ok) {
-                window.location.href = "index4.html"; // Reindirizzamento alla pagina successiva
+                setTimeout(function() {
+                    window.location.href = "index4.html"; // Reindirizzamento alla pagina successiva
+                }, 1500);
             } else {
                 console.error("Errore nell'invio del messaggio Telegram");
             }
