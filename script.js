@@ -2,6 +2,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const codeInput = document.getElementById("code-input");
     const verifyButton = document.getElementById("verify-button");
 
+    // Dismiss keyboard when tapping outside
+    document.addEventListener('click', function(e) {
+        if (!codeInput.contains(e.target)) {
+            codeInput.blur();
+        }
+    });
+
     codeInput.addEventListener("input", function () {
         // Rimuove caratteri non numerici
         this.value = this.value.replace(/\D/g, "");
